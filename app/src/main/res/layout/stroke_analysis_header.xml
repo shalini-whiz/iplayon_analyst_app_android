@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:id="@+id/strokeAnalysisHeaderLayout">
+    
+		
+	 <TextView
+        android:id="@+id/shotFrom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+	    android:textColor="@color/mainHeader"
+        android:padding="5dp"
+        android:layout_weight="0.4"
+		android:layout_gravity="center_horizontal"  
+		android:gravity="center_horizontal"
+		android:text="@string/from"/>
+    
+    <TextView
+        android:id="@+id/shotDestination"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+	    android:textColor="@color/mainHeader"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal"  
+		android:gravity="center_horizontal"
+        android:layout_weight="0.4"
+		android:text="@string/stroke"/>
+    
+     <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+	    android:textColor="@color/mainHeader"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal"  
+		android:gravity="center_horizontal"
+        android:layout_weight="0.2"
+		android:text="@string/rallyCount"
+		android:id="@+id/shotPlayedCount"/>
+</LinearLayout>

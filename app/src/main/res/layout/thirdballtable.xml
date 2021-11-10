@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+ >
+ 	<TextView
+ 	    android:id="@+id/recvShot"
+		android:layout_width="0dp"
+	    android:layout_height="match_parent"	
+	    android:layout_weight="0.3"
+	    android:textSize="12sp"
+	    android:textColor="@color/mainHeader"
+	    android:gravity="center_horizontal"
+	    android:padding="5dp"
+	    android:background="@drawable/table_border"
+	    android:text=""/>
+	        
+	<TextView
+	    android:id="@+id/recvShotDestination"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"	
+	    android:layout_weight="0.3"
+	    android:textSize="12sp"	       
+	    android:textColor="@color/mainHeader"
+	    android:gravity="center_horizontal"
+	    android:padding="5dp"
+	    android:background="@drawable/table_border"
+	    android:text=""/>
+	        
+	 <TextView
+	    android:id="@+id/thirdBall"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"	
+	    android:layout_weight="0.3"
+	    android:textSize="12sp"	               
+	    android:textColor="@color/mainHeader"
+	    android:gravity="center_horizontal"
+	    android:padding="5dp"
+	    android:background="@drawable/table_border"
+	    android:text=""/>
+	        
+	 <TextView
+	    android:id="@+id/thirdBallCount"
+	 	android:layout_width="0dp"
+	    android:layout_height="match_parent"	
+	    android:layout_weight="0.1"
+	    android:textSize="12sp"	               
+	    android:textColor="@color/mainHeader"
+	    android:gravity="center_horizontal"
+	    android:padding="5dp"
+	    android:background="@drawable/table_border"
+	    android:text=""/>
+</LinearLayout>

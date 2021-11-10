@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/customShotLayoutHeader"
+    android:padding="5dp"
+    android:layout_weight="1"
+ >
+ 
+    <AutoCompleteTextView
+        android:id="@+id/shotHandInput"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_weight="0.5"
+        android:dropDownWidth="fill_parent"
+		android:imeOptions="flagNoFullscreen"
+		android:layout_gravity="center_horizontal"  
+		android:gravity="center_horizontal"
+    	android:duplicateParentState="true"
+    	android:inputType="textNoSuggestions"
+		android:dropDownHeight="200dp"
+
+     />
+    
+    <AutoCompleteTextView
+        android:id="@+id/shotDestinationInput"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_weight="0.4"
+        android:dropDownWidth="fill_parent"      
+        android:dropDownHeight="200dp"
+		android:imeOptions="flagNoFullscreen"
+		android:layout_gravity="center_horizontal" 
+        android:gravity="center_horizontal"	
+		android:duplicateParentState="true"
+		android:inputType="textNoSuggestions"
+     />
+    
+      <ImageView 
+        android:id="@+id/shotDeleteInput"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:src="@drawable/trash"
+        android:focusable="false"
+		  android:scaleType="center"
+        />
+ 
+</LinearLayout> 

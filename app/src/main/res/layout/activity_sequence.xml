@@ -1,0 +1,817 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="@drawable/lighter_background">
+
+	<LinearLayout
+        android:id="@+id/AnalyticsHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+		>
+
+	   
+        <Button
+            android:id="@+id/analytics_data"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:background="@color/buttonColor"
+            android:text="@string/record"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            />
+        
+        <Button
+            android:id="@+id/sequence_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonColor"
+			android:gravity="center_horizontal|center_vertical"
+            android:text="@string/review"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            
+             />
+        
+         <Button
+            android:id="@+id/analytics_analyze"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonColor"
+			 android:gravity="center_horizontal|center_vertical"
+            android:text="@string/analyze"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            
+            />
+    </LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/recordSequenceLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:visibility="visible">
+
+		<LinearLayout
+			android:id="@+id/playerAnalyticsData"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:padding="5dp">
+
+			<AutoCompleteTextView
+				android:id="@+id/player1Spinner"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_horizontal"
+				android:layout_weight="1"
+				android:background="@color/lighterevenblue"
+				android:dropDownHeight="wrap_content"
+				android:ellipsize="none"
+				android:gravity="center_horizontal"
+				android:imeOptions="flagNoFullscreen"
+				android:inputType="textNoSuggestions|textMultiLine"
+				android:padding="5dp"
+				android:prompt="@string/choosePlayer1"
+				android:textColor="@color/playerColor"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:singleLine="true"
+
+				/>
+
+			<ImageView
+				android:id="@+id/player1Details"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="0.15"
+				android:scaleType="fitStart"
+				android:src="@drawable/profile_20"
+
+				/>
+
+
+			<AutoCompleteTextView
+				android:id="@+id/player2Spinner"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:background="@color/lighteroddblue"
+				android:dropDownHeight="wrap_content"
+				android:gravity="center_horizontal"
+				android:imeOptions="flagNoFullscreen"
+				android:inputType="textNoSuggestions|textMultiLine"
+				android:padding="5dp"
+				android:prompt="@string/choosePlayer2"
+				android:textColor="@color/opponentColor"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:singleLine="true"
+
+
+				/>
+
+			<ImageView
+				android:id="@+id/player2Details"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="0.15"
+				android:scaleType="fitStart"
+				android:src="@drawable/profile_20"
+
+				/>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			>
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="0.1"
+				android:gravity="center"
+				android:text="@string/matchTitle"
+				android:textColor="@color/mainHeader"
+				android:textSize="12sp"
+				android:maxLines="1"/>
+
+			<EditText
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="0.5"
+				android:gravity="center"
+				android:id="@+id/matchTitle"
+				android:textColor="@color/mainHeader"
+				android:textSize="14sp"
+				android:ellipsize="end"
+				android:maxLines="1"
+				android:text=""
+				android:inputType="text"/>
+
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="0.2"
+				android:gravity="center"
+				android:text="@string/startTime"
+				android:textColor="@color/mainHeader"
+				android:textSize="12sp"
+				android:maxLines="1"
+				/>
+
+			<EditText
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="0.2"
+				android:gravity="center"
+				android:textColor="@color/mainHeader"
+				android:textSize="14sp"
+				android:id="@+id/startTime"
+				android:ellipsize="end"
+				android:maxLines="1"
+				android:inputType="text"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/playerSetData"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<EditText
+				android:id="@+id/player1Set"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+				android:inputType="number"
+				android:textColor="@color/playerColor"
+				android:textSize="16sp"
+				/>
+
+			<EditText
+				android:id="@+id/player1Points"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+				android:inputType="number"
+				android:paddingEnd="10dp"
+				android:textColor="@color/playerColor"
+				android:textSize="16sp"
+
+
+				/>
+
+			<EditText
+				android:id="@+id/player2Set"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+				android:inputType="number"
+				android:textColor="@color/opponentColor"
+				android:textSize="16sp"
+				/>
+
+			<EditText
+				android:id="@+id/player2Points"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+				android:inputType="number"
+				android:textColor="@color/opponentColor"
+				android:textSize="16sp"
+
+
+
+				/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:text="@string/setLabel"
+				android:textColor="@color/mainHeader"
+				android:textSize="12sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:paddingRight="10dp"
+				android:text="@string/scoreLabel"
+				android:textColor="@color/mainHeader"
+				android:textSize="12sp" />
+
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:text="@string/setLabel"
+				android:textColor="@color/mainHeader"
+				android:textSize="12sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:text="@string/scoreLabel"
+				android:textColor="@color/mainHeader"
+				android:textSize="12sp" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/playersService"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:visibility="gone">
+
+			<RadioButton
+				android:id="@+id/player1Service"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:text="@string/player1Service" />
+
+			<RadioButton
+				android:id="@+id/player2Service"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:enabled="false"
+				android:text="@string/player2Service" />
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/customShotLayoutHeader"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:padding="5dp">
+
+			<ImageView
+				android:id="@+id/player1ServiceIcon"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="0.1"
+				android:gravity="center_horizontal"
+				android:src="@drawable/tennis_25"
+				android:visibility="gone"/>
+
+			<TextView
+				android:id="@+id/shortHandHeader"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_horizontal"
+				android:layout_weight="0.4"
+				android:gravity="center_horizontal"
+				android:text="@string/stroke"
+				android:textColor="@color/mainHeader"
+				android:textSize="14sp"
+
+
+				/>
+
+			<TextView
+				android:id="@+id/shortDestinationHeader"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_horizontal"
+				android:layout_weight="0.4"
+				android:gravity="center_horizontal"
+				android:text="@string/destination"
+				android:textColor="@color/mainHeader"
+				android:textSize="14sp"
+
+				/>
+			<ImageView
+				android:id="@+id/player2ServiceIcon"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="0.1"
+				android:gravity="center_horizontal"
+				android:src="@drawable/tennis_25"
+				android:visibility="gone"/>
+
+
+
+		</LinearLayout>
+
+		<ImageView
+			android:id="@+id/downarrow"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end"
+			android:src="@drawable/downarrow"
+			android:visibility="gone" />
+
+		<ListView
+			android:id="@+id/playerStrokesAppend"
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="2"
+			android:transcriptMode="alwaysScroll"
+			android:descendantFocusability="afterDescendants"
+
+
+
+			></ListView>
+
+
+		<ImageView
+			android:id="@+id/uparrow"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end"
+			android:src="@drawable/uparrow"
+			android:visibility="gone"
+
+			/>
+
+		<LinearLayout
+			android:id="@+id/playersWinner"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			>
+
+
+			<RadioGroup
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<RadioButton
+					android:id="@+id/partialSequence"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="start|center"
+					android:text="partial"
+					android:textSize="14sp"/>
+
+				<RadioButton
+					android:id="@+id/completeSequence"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:checked="true"
+					android:gravity="start|center"
+					android:text="complete"
+					android:textSize="14sp"/>
+
+			</RadioGroup>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/playersWinnerLayout"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:orientation="horizontal"
+
+			>
+
+			<Button
+				android:id="@+id/sequenceReset"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1.5"
+				android:background="@drawable/round_corner_orange"
+				android:text="@string/reset"
+				android:textColor="@color/buttonTextWhite"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textAllCaps="false"
+				android:padding="2dp"
+				/>
+
+			<ImageView
+				android:id="@+id/sequenceSettings"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_weight="2"
+				android:src="@drawable/settings_30"
+				android:padding="2dp"/>
+
+
+			<Button
+				android:id="@+id/sequenceSave"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1.5"
+				android:text="@string/save"
+				android:textColor="@color/buttonTextWhite"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textAllCaps="false"
+				android:background="@drawable/round_corner_orange"
+				android:padding="2dp"
+				/>
+
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/sequenceViewLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_margin="5dp"
+		android:orientation="vertical"
+		android:visibility="gone">
+
+		<Spinner
+			android:id="@+id/chooseReviewType"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			 />
+
+		<LinearLayout
+			android:id="@+id/reviewPlayerFilters"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:visibility="gone"
+			android:padding="5dp">
+
+			<Spinner
+				android:id="@+id/player1ViewFilter"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:prompt="@string/choosePlayer1"
+				android:spinnerMode="dialog" />
+
+			<Spinner
+				android:id="@+id/player2ViewFilter"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:dropDownWidth="match_parent"
+				android:prompt="@string/choosePlayer2"
+				android:spinnerMode="dialog" />
+
+		</LinearLayout>
+
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="5dp" />
+
+
+		<include
+			android:id="@+id/shareHistoryHeaderLayout"
+			layout="@layout/sharehistory_header"></include>
+
+		<ImageView
+			android:id="@+id/reviewdownarrow"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end"
+			android:src="@drawable/downarrow"
+			android:visibility="gone" />
+
+		<ListView
+			android:id="@+id/viewPlayerSequences"
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="3"
+			android:transcriptMode="alwaysScroll" />
+
+		<ImageView
+			android:id="@+id/reviewuparrow"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end"
+			android:src="@drawable/uparrow"
+			android:visibility="gone" />
+
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="1dp"
+			android:background="@color/toolBarSeparator" />
+
+
+		<Spinner
+			android:id="@+id/timeFilter"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="5dp"
+			android:paddingBottom="5dp"
+			/>
+
+		<LinearLayout
+			android:id="@+id/shareUserLayout"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="0.3"
+				android:padding="10dp"
+				android:text="Share To"
+				android:textColor="@color/subHeader"
+				android:textSize="14sp"
+				/>
+
+			<AutoCompleteTextView
+				android:id="@+id/shareFilter"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="0.6"
+				android:layout_gravity="center_horizontal"
+				android:dropDownHeight="wrap_content"
+				android:ellipsize="none"
+				android:gravity="center_horizontal"
+				android:hint="type name"
+				android:imeOptions="flagNoFullscreen"
+				android:inputType="textNoSuggestions|textMultiLine"
+				android:padding="10dp"
+				android:textColor="@color/playerColor"
+				android:textColorHint="@color/mainHeader"
+				android:textSize="16sp" />
+
+			<ImageView
+				android:id="@+id/viewSharedProfile"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="0.2"
+				android:src="@drawable/view"
+				android:layout_gravity="center_vertical|center_horizontal"
+				android:padding="5dp"
+				android:tint="@color/buttonColor"
+				android:visibility="gone"
+				/>
+
+		</LinearLayout>
+
+
+		<Button
+			android:id="@+id/shareSubmit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_margin="5dp"
+			android:background="@drawable/button_square"
+			android:gravity="center"
+			android:text="@string/shareLabel"
+			android:textColor="@color/white"
+			android:textSize="16sp"
+			android:textStyle="bold" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/analyticsSequenceLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:visibility="gone">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:padding="5dp">
+
+			<Spinner
+				android:id="@+id/chooseAnalyticsType"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="3" />
+
+			<ImageView
+				android:id="@+id/downloadAnalytics"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal|center_vertical"
+				android:layout_weight="1"
+				android:src="@drawable/download_30"
+				android:tint="@color/buttonColor"></ImageView>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:padding="5dp">
+
+			<Spinner
+				android:id="@+id/player1AnalyzeFilter"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_horizontal"
+				android:layout_weight="2"
+				android:gravity="center_horizontal"
+				android:prompt="@string/choosePlayer1"
+				android:spinnerMode="dialog" />
+
+			<Spinner
+				android:id="@+id/player2AnalyzeFilter"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_horizontal"
+				android:layout_weight="2"
+				android:gravity="center_horizontal"
+				android:prompt="@string/choosePlayer2"
+				android:spinnerMode="dialog" />
+
+		</LinearLayout>
+
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="1dp"
+			android:background="@color/toolBarSeparator" />
+
+
+		<include
+			android:id="@+id/serviceHeaderLayout"
+			layout="@layout/service_analysis_header"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"></include>
+
+		<include
+			android:id="@+id/receiveHeaderLayout"
+			layout="@layout/receive_analytics_header"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"></include>
+
+		<include
+			android:id="@+id/rallyHeaderLayout"
+			layout="@layout/rally_header"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"></include>
+
+		<include
+			android:id="@+id/strokeAnalysisHeaderLayout"
+			layout="@layout/stroke_analysis_header"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"></include>
+
+		<include
+			android:id="@+id/thirdBallAnalysisHeaderLayout"
+			layout="@layout/thirdball_analysis_header"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"></include>
+
+
+		<ImageView
+			android:id="@+id/analyticsdownarrow"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end"
+			android:src="@drawable/downarrow"
+			android:visibility="visible" />
+
+		<ListView
+			android:id="@+id/playerAnalyticsListView"
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="2"
+			android:transcriptMode="alwaysScroll"></ListView>
+
+		<include
+			android:id="@+id/fourthball_analysisLayout"
+			layout="@layout/fourthball_analysis"></include>
+
+		<ImageView
+			android:id="@+id/analyticsuparrow"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end"
+			android:src="@drawable/uparrow"
+			android:visibility="visible" />
+
+		<LinearLayout
+			android:id="@+id/sortLayout"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingBottom="10dp"
+				android:paddingTop="10dp"
+				android:paddingRight="10dp"
+				android:text="@string/sortBy"
+				android:textColor="@color/mainHeader" />
+
+			<Spinner
+				android:id="@+id/sortAnalyzeFilter"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				 />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingBottom="10dp"
+				android:paddingTop="10dp"
+				android:paddingRight="10dp"
+				android:text="@string/chooseTime"
+				android:textColor="@color/mainHeader" />
+
+			<Spinner
+				android:id="@+id/analyzeTimeFilter"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				 />
+
+		</LinearLayout>
+
+
+	</LinearLayout>
+	
+   
+    
+   
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:id="@+id/rallyHeaderLayout"
+    android:visibility="gone">
+    
+		
+	 <TextView
+        android:id="@+id/sequenceLen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+	    android:textColor="@color/mainHeader"
+        android:padding="5dp"
+        android:layout_weight="0.2"
+		android:layout_gravity="center_horizontal"  
+		android:gravity="center_horizontal"
+		android:text="@string/rallyLength"
+     />
+    
+    <TextView
+        android:id="@+id/shotsPlayed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+	    android:textColor="@color/mainHeader"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal"  
+		android:gravity="center_horizontal"
+        android:layout_weight="0.2"
+		android:text="@string/rallyCount"
+        
+     />
+    
+     <TextView
+        android:id="@+id/winCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"  
+		android:gravity="center_horizontal"
+        android:textSize="14sp"
+	    android:textColor="@color/mainHeader"
+        android:padding="5dp"
+        android:layout_weight="0.2"
+        android:text="@string/rallyWin"
+        
+     />
+    <TextView
+        android:id="@+id/lossCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"  
+		android:gravity="center_horizontal"
+        android:textSize="14sp"
+	    android:textColor="@color/mainHeader"
+        android:padding="5dp"
+        android:layout_weight="0.2"
+        android:text="@string/rallyLoss"  
+     />
+     <TextView
+        android:id="@+id/efficiency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"  
+		android:gravity="center_horizontal"
+        android:textSize="14sp"
+	    android:textColor="@color/mainHeader"
+        android:padding="5dp"
+        android:layout_weight="0.2"
+        android:text="@string/rallyEfficiency"  
+        
+     />
+</LinearLayout>

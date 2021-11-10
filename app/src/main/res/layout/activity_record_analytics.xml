@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lighter_background"
+    android:orientation="vertical"
+    android:id="@+id/recordAnalyticsLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/playerAnalyticsData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/player1Spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/lighterevenblue"
+            android:dropDownHeight="wrap_content"
+            android:ellipsize="none"
+            android:gravity="center_horizontal"
+            android:imeOptions="flagNoFullscreen"
+            android:inputType="textNoSuggestions|textMultiLine"
+            android:padding="5dp"
+            android:prompt="@string/choosePlayer1"
+            android:textColor="@color/playerColor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+
+            />
+
+        <ImageView
+            android:id="@+id/player1Details"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:scaleType="fitStart"
+            android:src="@drawable/profile_20"
+
+            />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/player2Spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lighteroddblue"
+            android:dropDownHeight="wrap_content"
+            android:gravity="center_horizontal"
+            android:imeOptions="flagNoFullscreen"
+            android:inputType="textNoSuggestions|textMultiLine"
+            android:padding="5dp"
+            android:prompt="@string/choosePlayer2"
+            android:textColor="@color/opponentColor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/player2Details"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:scaleType="fitStart"
+            android:src="@drawable/profile_20"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="@string/matchTitle"
+            android:textColor="@color/mainHeader"
+            android:textSize="12sp"
+            android:maxLines="1"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:id="@+id/matchTitle"
+            android:textColor="@color/mainHeader"
+            android:textSize="14sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:inputType="text"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="@string/startTime"
+            android:textColor="@color/mainHeader"
+            android:textSize="12sp"
+            android:maxLines="1"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:textColor="@color/mainHeader"
+            android:textSize="14sp"
+            android:id="@+id/startTime"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/playerSetData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/player1Set"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+            android:inputType="number"
+            android:textColor="@color/playerColor"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/player1Points"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+            android:inputType="number"
+            android:paddingEnd="10dp"
+            android:textColor="@color/playerColor"
+            android:textSize="16sp"
+
+
+            />
+
+        <EditText
+            android:id="@+id/player2Set"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+            android:inputType="number"
+            android:textColor="@color/opponentColor"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/player2Points"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+            android:inputType="number"
+            android:textColor="@color/opponentColor"
+            android:textSize="16sp"
+
+
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/setLabel"
+            android:textColor="@color/mainHeader"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingRight="10dp"
+            android:text="@string/scoreLabel"
+            android:textColor="@color/mainHeader"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/setLabel"
+            android:textColor="@color/mainHeader"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/scoreLabel"
+            android:textColor="@color/mainHeader"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/playersService"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/player1Service"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/player1Service" />
+
+        <RadioButton
+            android:id="@+id/player2Service"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/player2Service" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/customShotLayoutHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/player1ServiceIcon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center_horizontal"
+            android:src="@drawable/tennis_25"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/shortHandHeader"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.4"
+            android:gravity="center_horizontal"
+            android:text="@string/stroke"
+            android:textColor="@color/mainHeader"
+            android:textSize="14sp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/shortDestinationHeader"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.4"
+            android:gravity="center_horizontal"
+            android:text="@string/destination"
+            android:textColor="@color/mainHeader"
+            android:textSize="14sp"
+
+            />
+        <ImageView
+            android:id="@+id/player2ServiceIcon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center_horizontal"
+            android:src="@drawable/tennis_25"
+            android:visibility="gone"/>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/downarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@drawable/downarrow"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/playerStrokesAppend"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:transcriptMode="alwaysScroll"
+        android:descendantFocusability="afterDescendants"
+
+
+
+        ></ListView>
+
+
+    <ImageView
+        android:id="@+id/uparrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@drawable/uparrow"
+        android:visibility="gone"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/playersWinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/partialSequence"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:text="partial"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:id="@+id/completeSequence"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:gravity="start|center"
+                android:text="complete"
+                android:textSize="14sp"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/playersWinnerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/sequenceReset"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/round_corner_orange"
+            android:text="@string/reset"
+            android:textColor="@color/buttonTextWhite"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:padding="2dp"
+            />
+
+        <ImageView
+            android:id="@+id/sequenceSettings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:src="@drawable/settings_30"
+            android:padding="2dp"/>
+
+
+        <Button
+            android:id="@+id/sequenceSave"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:text="@string/save"
+            android:textColor="@color/buttonTextWhite"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@drawable/round_corner_orange"
+            android:padding="2dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

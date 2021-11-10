@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Analyst App</string>
+    <string name="login">Log in</string>
+    <string name="register">Register now</string>
+    <string name="copyrights">&#169; 2019, All rights reserved</string>
+    <string name="playerHeader">Analyst</string>
+    <string name="loginHeader">Login</string>
+    <string name="registerHeader">Register</string>
+    <string name="forgotPassword">Forgot Password</string>
+    <string name="enterUserName">Enter User Name</string>
+    <string name="enterUserMail">Enter Mail ID</string>
+    <string name="loginUserMailHint">registered mail ID</string>
+    <string name="loginUserPwdHint">password</string>
+    <string name="setNewPassword">Set New Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="verificiationCode">Enter Verification Code</string>
+    <string name="regContinue">Continue</string>
+
+    <string name="ipAddress">IP Address</string>
+    <string name="slNoHeader">No</string>
+    <string name="academyHeader">Academy</string>
+    <string name="teamHeader">Team</string>
+    <string name="cityHeader">City</string>
+    <string name="stateHeader">State</string>
+    <string name="pointsHeader">Points</string>
+    <string name="rankHeader">Rank</string>
+    <string name="playerListHeader">Player List</string>
+    <string name="playerRankHeader">Player Rank</string>
+    <string name="tournamentListHeader">Tournament List</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+    <string name="menus">Menus</string>
+    <string name="ok">OK</string>
+    <string name="getEntries">Get Entries</string>
+    <string name="rank">Rank</string>
+    <string name="name">Name</string>
+    <string name="club">Club</string>
+    <string name="entriesHeader">Current Entries</string>
+    <string name="sportsHeader">Sports</string>
+    <string name="eventsHeader">Events</string>
+    <string name="organizerHeader">Event Organizer</string>
+    <string name="chooseFilters">Choose Filters</string>
+    <string name="home">Home</string>
+    <string name="reset">Reset</string>
+    <string name="save">Save</string>
+    <string name="vs">Vs</string>
+    <string name="display">Display</string>
+    <string name="no">No</string>
+    <string name="logOut">Logout</string>
+    <string name="close">Close</string>
+    <string name="saveSequence">Save Sequence</string>
+
+
+    <string name="colonSeparator">:</string>
+    <string name="playerProfileLable">Player Profile</string>
+    <string name="nameLabel">Name:</string>
+    <string name="affiliationIdLabel">Affiliation ID:</string>
+    <string name="nationalAffiliationIdLabel">National Affiliation ID:</string>
+    <string name="mailIdLabel">Email ID:</string>
+    <string name="dobLabel">DOB:</string>
+    <string name="genderLabel">Gender:</string>
+    <string name="addressLabel">Address:</string>
+    <string name="cityLabel">City:</string>
+    <string name="stateLabel">State:</string>
+    <string name="phoneLabel">Phone:</string>
+    <string name="academyLabel">Academy:</string>
+    <string name="assocLabel">Association:</string>
+
+
+    <string name="profileLabel">Profile</string>
+
+    <string name="nav_analytics">Analytics</string>
+    <string name="nav_review_analytics">Review Analytics</string>
+
+    <string name="nav_analyze_analytics">Analyze Analytics</string>
+
+    <string name="nav_myProfile">My Profile</string>
+    <string name="nav_logout">Logout</string>
+
+
+    <string-array name="nav_item_activity_titles">
+        <item>Analytics</item>
+        <item>Review Analytics</item>
+        <item>Analyze Analytics</item>
+        <item>My Profile</item>
+        <item>Logout</item>
+    </string-array>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <!-- profile -->
+    <string name="nameHeader">Name</string>
+    <string name="emailHeader">Email</string>
+    <string name="phoneNoHeader">Phone Number</string>
+    <string name="sportHeader">Sport</string>
+    <string name="pinCodeHeader">PinCode</string>
+    <string name="dobHeader">DOB</string>
+    <string name="guardianHeader">Guardian Name</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="verificationSuccess">We have sent the confirmation code to your email<br> please check your inbox</br></string>
+
+
+    <string name="noInternet">No Internet</string>
+    <string name="title_activity_event_report">EventReport</string>
+    <string name="attachmentHeader"><u>Attachments</u></string>
+    <string name="teamDetailHeader"><u>Team Detailed Scores</u></string>
+
+
+    <string-array name="matchStatusList">
+        <item>Not Played</item>
+        <item>Bye</item>
+        <item>Walkover</item>
+        <item>Completed</item>
+    </string-array>
+    <string-array name="matchTypeList">
+        <item>Singles</item>
+        <item>Doubles</item>
+    </string-array>
+    <string name="title_activity_live_report">LiveReport</string>
+
+
+    <string name="record">Record</string>
+    <string name="review">Review</string>
+    <string name="analyze">Analyze</string>
+    <string name="players">Players</string>
+    <string name="service"><u>service</u></string>
+    <string name="stroke"><u>stroke</u></string>
+    <string name="destination"><u>destination</u></string>
+    <string name="viewSequence">View Sequence</string>
+    <string name="choosePlayer1">Choose Player</string>
+    <string name="choosePlayer2">Choose Opponent</string>
+    <string name="chooseTime">Since</string>
+    <string name="sortBy">Sort By</string>
+    <string name="setpoints">Set/Points</string>
+    <string name="matches">Matches</string>
+    <string name="shot">Shot</string>
+    <string name="win">Win</string>
+    <string name="loss">Loss</string>
+    <string name="efficiency">Effectiveness</string>
+    <string name="matchTitle">Title</string>
+    <string name="startTime">Start Time</string>
+    <string name="setLabel">set</string>
+    <string name="scoreLabel">score</string>
+    <string name="player1Service">Player1</string>
+    <string name="player2Service">Player2</string>
+    <string name="shareLabel">Share</string>
+
+
+    <string name="set">set</string>
+    <string name="point">point</string>
+    <string name="strokeplayed"># played</string>
+    <string name="from"><u>from</u></string>
+    <string name="servicetype"><u>service type</u></string>
+    <string name="net">net</string>
+    <string name="miss">miss</string>
+    <string name="out">out</string>
+    <string name="batedge">bat-edge</string>
+    <string name="defensive">defensive</string>
+    <string name="offensive">offensive</string>
+    <string name="count">count</string>
+    <string name="fourthBallWin">win</string>
+    <string name="lost">lost</string>
+    <string name="recShot">rec shot</string>
+    <string name="recDest">rec dest</string>
+    <string name="thirdBall">3rd ball</string>
+    <string name="winners"><u>winners</u></string>
+    <string name="played">#</string>
+    <string name="error"><u>error</u></string>
+    <string name="winningshot"><u>winning shot</u></string>
+    <string name="title_activity_registeration">Registration</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="sharedToLabel"><u>Shared To</u></string>
+    <string name="player1Label"><u>Player1</u></string>
+    <string name="player2Label"><u>Player2</u></string>
+    <string name="shareCountLabel"><u>#</u></string>
+    <string name="sharedDate"><u>Date</u></string>
+
+
+    <string name="rubberName">Rubber Name</string>
+    <string name="dateHint">dd/mm/yy</string>
+    <string name="rubber">rubber</string>
+    <string name="since">since</string>
+    <string name="backhand">Backhand</string>
+    <string name="forehand">Forehand</string>
+    <string name="matchDate">Match Date</string>
+    <string name="rallyLength"><u>length</u></string>
+    <string name="rallyCount"><u>#</u></string>
+    <string name="rallyWin"><u>win</u></string>
+    <string name="rallyLoss"><u>loss</u></string>
+    <string name="rallyEfficiency"><u>effective</u></string>
+
+    <string-array name="analyticsList">
+        <item>Last Shot Analysis</item>
+        <item>Service Points</item>
+        <item>Receive Points</item>
+        <item>Service Loss</item>
+        <item>Rally Length</item>
+        <item>Stroke Analysis</item>
+    </string-array>
+
+
+    <string-array name="sequenceAnalyzeList">
+        <item>Last Shot Analysis</item>
+        <item>Service Points</item>
+        <item>Receive Points</item>
+        <item>Service Loss</item>
+        <item>Service Fault</item>
+        <item>Service Response</item>
+        <item>Rally Length</item>
+        <item>Stroke Analysis</item>
+        <item>Errors</item>
+        <item>3rd Ball Attack</item>
+        <item>4th Ball Shot</item>
+
+    </string-array>
+    <string name="chooseService">Choose Service By</string>
+    <string-array name="playerHand">
+        <item>Unknown</item>
+        <item>LeftHand</item>
+        <item>RightHand</item>
+    </string-array>
+
+    <string-array name="seqReviewList">
+        <item>View Sequence</item>
+        <item>Share Sequence</item>
+        <item>Share History</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

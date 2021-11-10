@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:id="@+id/serviceHeaderLayout"
+    android:visibility="gone">
+    
+    <TextView
+        android:id="@+id/serviceTitle"
+		android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:textSize="14sp"
+	    android:textColor="@color/mainHeader"
+	    android:layout_weight="0.4"
+	    android:text="@string/service"
+	    android:layout_gravity="center_horizontal"   
+	    android:gravity="center_horizontal"/>
+    
+	<TextView
+		android:id="@+id/destinationTitle"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:textSize="14sp"
+	    android:textColor="@color/mainHeader"
+	    android:layout_weight="0.4"
+	    android:text="@string/destination"
+	    android:layout_gravity="center_horizontal" 
+	    android:gravity="center_horizontal" />
+	    
+	   
+	<TextView
+		android:id="@+id/countTitle"
+	    android:layout_width="0dp"
+	    android:text="#"
+	    android:layout_height="match_parent"
+	    android:textSize="14sp"
+	    android:textColor="@color/mainHeader"
+	    android:layout_weight="0.2"
+	    android:layout_gravity="center_horizontal" 
+	    android:gravity="center_horizontal"/>
+	  
+</LinearLayout>

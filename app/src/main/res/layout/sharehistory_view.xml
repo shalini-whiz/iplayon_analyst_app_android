@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:id="@+id/shareHistoryHeaderLayout"
+ >
+ 
+  
+    <TextView
+        android:id="@+id/sharedTo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/hightlightColor"
+        android:padding="5dp"
+        android:layout_weight="0.2"
+		android:layout_gravity="center_horizontal"  
+		android:gravity="center_horizontal"    	
+     />
+    <TextView
+        android:id="@+id/player1Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/hightlightColor"
+        android:padding="5dp"
+        android:layout_weight="0.2"
+		android:layout_gravity="center_horizontal"  
+		android:gravity="center_horizontal"
+    	android:duplicateParentState="true"    	
+     />
+    
+    <TextView
+        android:id="@+id/player2Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/hightlightColor"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal"  
+		android:gravity="center_horizontal"
+        android:layout_weight="0.2"              
+     />
+    
+     <TextView
+        android:id="@+id/sharedCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"  
+		android:gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textColor="@color/hightlightColor"
+        android:padding="5dp"
+        android:layout_weight="0.2"       
+        
+     />
+    <TextView
+        android:id="@+id/sharedDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"  
+		android:gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textColor="@color/hightlightColor"
+        android:padding="5dp"
+        android:layout_weight="0.2"        
+     />
+    
+
+</LinearLayout> 

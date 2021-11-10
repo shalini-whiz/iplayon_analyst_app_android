@@ -1,0 +1,122 @@
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fillViewport="true"
+	android:background="@drawable/custom_background_dotter"
+	>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:id="@+id/defaultProfileLayout"
+			android:layout_weight="0.7"
+			android:visibility="visible"
+
+			>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:visibility="visible"
+				android:weightSum="1"
+				android:padding="5dp"
+
+				>
+
+				<ImageView
+					android:id="@+id/editProfile"
+					android:layout_width="wrap_content"
+					android:layout_height="0dp"
+					android:layout_gravity="end"
+					android:layout_weight="0.1"
+					android:adjustViewBounds="true"
+					android:gravity="end"
+					android:padding="5dp"
+					android:scaleType="fitXY"
+					android:src="@drawable/edit"
+					android:tint="@color/iconColor"
+					android:visibility="gone"/>
+				<ImageView
+					android:id="@+id/userImg"
+					android:layout_width="wrap_content"
+					android:layout_height="0dp"
+					android:layout_gravity="center_horizontal|center_vertical"
+					android:gravity="center_horizontal|center_vertical"
+					android:scaleType="fitXY"
+					android:tint="@color/iconColor"
+					android:layout_weight="0.6"
+					android:adjustViewBounds="true"
+					android:background="@drawable/nonactive_dot"/>
+
+
+				<View
+					android:layout_width="wrap_content"
+					android:layout_height="2dp"
+					android:layout_weight="0.1"/>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="player name"
+					android:layout_gravity="center_horizontal|center_vertical"
+					android:gravity="center_horizontal|center_vertical"
+					android:textSize="24sp"
+					android:id="@+id/userName"
+					android:textColor="@color/mainHeader"
+					/>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="player name"
+					android:layout_gravity="center_horizontal|center_vertical"
+					android:gravity="center_horizontal|center_vertical"
+					android:textSize="24sp"
+					android:id="@+id/userMailAddress"
+					android:textColor="@color/mainHeader"
+					android:visibility="invisible"
+					/>
+
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal|center_vertical"
+					android:gravity="center_horizontal|center_vertical"
+					android:textSize="14sp"
+					android:textColor="@color/subHeader"
+
+					/>
+				<View
+					android:layout_width="wrap_content"
+					android:layout_height="10dp"
+					/>
+
+				<View
+					android:layout_width="wrap_content"
+					android:layout_height="5dp"
+					android:visibility="visible"
+					android:layout_gravity="bottom"
+					android:gravity="bottom"
+					/>
+
+			</LinearLayout>
+
+
+
+		</LinearLayout>
+
+
+
+
+
+	</LinearLayout>
+
+
+</ScrollView>

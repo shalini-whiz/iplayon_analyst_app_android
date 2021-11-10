@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="10dp" >
+
+	<TextView
+		android:id="@+id/playerNameValue"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:layout_gravity="start"
+		android:gravity="start"
+		android:textSize="16sp"
+		android:textStyle="bold"
+		android:textColor="@color/textColor"
+		android:background="@color/iconColor"
+		/>
+
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="10dp"
+			android:paddingTop="10dp"
+			android:paddingRight="10dp"
+			android:text="Choose Hand"
+			android:textColor="@color/mainHeader" />
+
+		<Spinner
+			android:id="@+id/playerHand"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="2"
+			/>
+
+	</LinearLayout>
+    	<TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+				android:textColor="@color/playerColor"
+				android:background="@drawable/button_border"
+				android:textSize="14sp"
+				android:text="@string/forehand"	
+		/> 
+		
+    	<LinearLayout 
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="vertical"
+    	    android:background="@drawable/layout_border"
+    	    >
+    	    
+    	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:orientation="horizontal">
+	         <EditText
+		        android:id="@+id/foreHandRT"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="16sp"
+		        android:textColor="@android:color/black"
+		        android:padding="5dp"
+		        android:layout_weight="0.4"
+				android:imeOptions="flagNoFullscreen"
+				android:layout_gravity="center_horizontal"  
+				android:gravity="center_horizontal"
+		    	android:duplicateParentState="true"	
+		    	android:hint="@string/rubberName"    	
+     		/>
+    
+		    <EditText
+		        android:id="@+id/foreHandDate"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="16sp"
+		        android:textColor="@android:color/black"
+		        android:padding="5dp"
+		        android:layout_weight="0.4"
+				android:layout_gravity="center_horizontal" 
+		        android:gravity="center_horizontal"	
+				android:duplicateParentState="true"
+				android:hint="@string/dateHint"    	
+				            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+				
+		     />
+		     <ImageView 
+        		android:id="@+id/foreHandAdd"
+	        	android:layout_width="0dp"
+	       	 	android:layout_height="wrap_content"
+	        	android:layout_weight="0.2"
+	        	android:src="@drawable/plus_25"
+        	/>
+    	</LinearLayout>
+    	<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="5dp"
+	        android:orientation="horizontal">
+	         <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="14sp"
+	            android:textColor="@color/title_gray"
+		        android:layout_weight="0.4"
+				android:layout_gravity="center_horizontal"  
+				android:gravity="center_horizontal"
+		    	android:text="@string/rubber"
+     		/>
+    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="14sp"
+	            android:textColor="@color/title_gray"
+		        android:layout_weight="0.4"
+				android:layout_gravity="center_horizontal" 
+		        android:gravity="center_horizontal"	
+				android:duplicateParentState="true"
+				android:hint="@string/since"    	
+		     />
+		     <ImageView 
+	        	android:layout_width="0dp"
+	       	 	android:layout_height="match_parent"
+	        	android:layout_weight="0.2"
+        	/>
+    	</LinearLayout>
+    
+	    <ListView
+	        	android:layout_margin="10dp"
+		        android:id="@+id/foreHandListView"
+		        android:layout_width="fill_parent"
+		        android:layout_height="90dp"
+		        android:transcriptMode="alwaysScroll"
+		        android:background="@drawable/listview_border"
+		        >
+		</ListView>
+    	    
+    	    
+    	</LinearLayout>
+		
+    	
+	    <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+				android:textColor="@color/playerColor"
+				android:background="@drawable/button_border"
+				android:textSize="14sp"
+				android:text="@string/backhand"	
+				android:layout_marginTop="10dp"
+		/> 
+		
+	    <LinearLayout 
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="vertical"
+    	    android:background="@drawable/layout_border"
+    	    >
+	    
+	        <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:orientation="horizontal">
+	         <EditText
+		        android:id="@+id/backHandRT"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="16sp"
+		        android:textColor="@android:color/black"
+		        android:padding="5dp"
+		        android:layout_weight="0.4"
+				android:imeOptions="flagNoFullscreen"
+				android:layout_gravity="center_horizontal"  
+				android:gravity="center_horizontal"
+		    	android:duplicateParentState="true"	
+		    	android:hint="@string/rubberName"    	
+     		/>
+    
+		    <EditText
+		        android:id="@+id/backHandDate"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="16sp"
+		        android:textColor="@android:color/black"
+		        android:padding="5dp"
+		        android:layout_weight="0.4"
+				android:layout_gravity="center_horizontal" 
+		        android:gravity="center_horizontal"	
+				android:duplicateParentState="true"
+				android:hint="@string/dateHint"    	
+				            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+				
+		     />
+		     <ImageView 
+        		android:id="@+id/backHandAdd"
+	        	android:layout_width="0dp"
+	       	 	android:layout_height="wrap_content"
+	        	android:layout_weight="0.2"
+	        	android:src="@drawable/plus_25"
+        	/>
+    	</LinearLayout>
+    	<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="5dp"
+	        android:orientation="horizontal">
+	         <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="14sp"
+	            android:textColor="@color/title_gray"
+		        android:layout_weight="0.4"
+				android:layout_gravity="center_horizontal"  
+				android:gravity="center_horizontal"
+		    	android:text="@string/rubber"    	
+     		/>
+    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="14sp"
+	            android:textColor="@color/title_gray"
+		        android:layout_weight="0.4"
+				android:layout_gravity="center_horizontal" 
+		        android:gravity="center_horizontal"	
+				android:duplicateParentState="true"
+				android:text="@string/since"    	
+		     />
+		     <ImageView 
+	        	android:layout_width="0dp"
+	       	 	android:layout_height="match_parent"
+	        	android:layout_weight="0.2"
+        	/>
+    	</LinearLayout>
+    	<ListView
+	        android:id="@+id/backHandListView"
+	        android:layout_width="fill_parent"
+	        android:layout_margin="10dp"       
+	        android:layout_height="90dp"
+	        android:transcriptMode="alwaysScroll"
+	        android:background="@drawable/listview_border"
+		    >
+	    </ListView>
+	    
+	    </LinearLayout>
+	    
+	    	    
+		
+	      	
+	    
+    	
+    
+
+</LinearLayout>

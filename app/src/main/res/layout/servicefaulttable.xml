@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+ >
+ 	<TextView
+ 	    android:id="@+id/setValue"
+		android:layout_width="0dp"
+	    android:layout_height="wrap_content"	
+	    android:layout_weight="3"
+	    android:textSize="12sp"
+	    android:textColor="@color/mainHeader"
+	    android:gravity="center_horizontal"
+	    android:padding="5dp"
+	    android:background="@drawable/table_border"
+	    android:text="1"/>
+ 	
+ 	<TextView
+ 	    android:id="@+id/pointValue"
+		android:layout_width="0dp"
+	    android:layout_height="wrap_content"	
+	    android:layout_weight="3"
+	    android:textSize="12sp"
+	    android:textColor="@color/mainHeader"
+	    android:gravity="center_horizontal"
+	    android:padding="5dp"
+	    android:background="@drawable/table_border"
+	    android:text="1"/>
+	
+	 <TextView
+	    android:id="@+id/faultCount"
+	 	android:layout_width="0dp"
+	    android:layout_height="wrap_content"	
+	    android:layout_weight="1"
+	    android:textSize="12sp"	               
+	    android:textColor="@color/mainHeader"
+	    android:gravity="center_horizontal"
+	    android:padding="5dp"
+	    android:background="@drawable/table_border"
+	    android:text="1"/>
+</LinearLayout>

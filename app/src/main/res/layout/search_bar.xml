@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:orientation="horizontal"
+    android:id="@+id/searchBarLayout"
+    android:layout_margin="1dp"
+
+    >
+
+
+    <EditText
+        android:id="@+id/inputSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_weight="0.7"
+        android:background="@drawable/searchbar_style"
+        android:drawableEnd="@drawable/searchcancel"
+        android:drawableStart="@drawable/search"
+        android:hint="search"
+        android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+        android:padding="5dp"
+        android:textColorHint="@color/headerLabelGrey"
+        android:textColor="@color/headerLabelGrey"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:inputType="text"
+
+        />
+
+    <TextView
+        android:id="@+id/cancelSearch"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="@string/cancel"
+        android:textSize="18dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:src="@android:drawable/ic_menu_rotate"
+        android:layout_margin="5dp"
+
+        />
+
+</LinearLayout>

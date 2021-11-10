@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="10dp" >
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal|center_vertical"
+		android:layout_gravity="center_horizontal|center_vertical"
+		android:textSize="16sp"
+		android:padding="5dp"
+		android:background="@color/websiteHeader"
+		android:id="@+id/dialogTitle"
+		android:textColor="@color/textColor"
+
+		/>
+
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="#c0c0c0" />
+    
+ 		<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:orientation="horizontal"
+	        >
+	        <TextView
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.7"
+		            android:padding="5dp"
+					android:textColor="@color/playerColor"
+					android:layout_gravity="start"
+					android:gravity="start"
+					android:textSize="16sp"
+					android:text="@string/nameLabel"
+				/> 
+				
+				<TextView
+		            android:id="@+id/playerNameValue"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.7"
+					android:padding="5dp"
+					android:textColor="@color/playerColor"
+					android:layout_gravity="start"
+					android:gravity="start"
+					android:textSize="16sp"
+					android:maxLines="2"
+					android:ellipsize="end"
+				/>
+				
+		</LinearLayout>
+		<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:orientation="horizontal"
+	        >
+	        <TextView
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.7"
+					android:padding="5dp"
+					android:textColor="@color/playerColor"
+					android:layout_gravity="start"
+					android:gravity="start"
+					android:textSize="16sp"
+					android:text="@string/affiliationIdLabel"
+				/> 
+				
+				<TextView
+		            android:id="@+id/playerAffiliationId"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.7"
+					android:padding="5dp"
+					android:textColor="@color/playerColor"
+					android:layout_gravity="start"
+					android:gravity="start"
+					android:textSize="16sp"
+				/> 
+				
+		</LinearLayout>
+		<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:orientation="horizontal"
+	        >
+	        <TextView
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.7"
+					android:padding="5dp"
+					android:textColor="@color/playerColor"
+					android:layout_gravity="start"
+					android:gravity="start"
+					android:textSize="16sp"
+					android:text="@string/academyLabel"
+				/> 
+				
+				<TextView
+		            android:id="@+id/playerAcademy"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.7"
+					android:padding="5dp"
+					android:textColor="@color/playerColor"
+					android:layout_gravity="start"
+					android:gravity="start"
+					android:textSize="16sp"
+				/> 
+				
+		</LinearLayout>
+		<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:orientation="horizontal"
+	        >
+	        <TextView
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.7"
+					android:padding="5dp"
+					android:textColor="@color/playerColor"
+					android:layout_gravity="start"
+					android:gravity="start"
+					android:textSize="16sp"
+					android:text="@string/assocLabel"
+				/> 
+				
+				<TextView
+		            android:id="@+id/playerAssociation"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.7"
+					android:padding="5dp"
+					android:textColor="@color/playerColor"
+					android:layout_gravity="start"
+					android:gravity="start"
+					android:textSize="16sp"
+				/> 
+				
+		</LinearLayout>
+
+
+</LinearLayout>

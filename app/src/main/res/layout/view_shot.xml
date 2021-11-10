@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/customShotLayout"
+    android:padding="5dp"
+    android:layout_weight="1"
+ >
+ 
+     
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         
+         
+        <TextView
+	        android:id="@+id/viewShotHand"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+	        android:textColor="@color/playerColor"
+	        android:padding="5dp"
+	        android:layout_weight="0.5"
+			android:layout_gravity="center_horizontal"  
+			android:gravity="center_horizontal"	 
+     	/>
+    
+	    <TextView
+	        android:id="@+id/viewShotDestination"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+	        android:textColor="@color/playerColor"
+	        android:padding="5dp"
+	        android:layout_weight="0.5"
+			android:layout_gravity="center_horizontal" 
+	        android:gravity="center_horizontal"	
+	     />     
+     </LinearLayout>
+     
+      <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         
+         
+        <TextView
+	        android:id="@+id/viewShotHandName"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+	        android:textColor="@color/playerColor"
+	        android:padding="5dp"
+	        android:layout_weight="0.5"
+			android:layout_gravity="center_horizontal"  
+			android:gravity="center_horizontal"
+			android:visibility="gone"
+     	/>
+    
+	    <TextView
+	        android:id="@+id/viewShotDestinationName"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+	        android:textColor="@color/playerColor"
+	        android:padding="5dp"
+	        android:layout_weight="0.5"
+			android:layout_gravity="center_horizontal" 
+	        android:gravity="center_horizontal"	
+	       	android:visibility="gone"
+	     />     
+     </LinearLayout>
+  
+</LinearLayout> 

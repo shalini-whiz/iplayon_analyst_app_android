@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+	>
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal|center_vertical"
+		android:layout_gravity="center_horizontal|center_vertical"
+		android:textSize="16sp"
+		android:padding="5dp"
+		android:background="@color/websiteHeader"
+		android:id="@+id/dialogTitle"
+		android:textColor="@color/textColor"
+		android:text="@string/chooseService"
+
+		/>
+
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="#c0c0c0" />
+
+
+
+    
+     <RadioGroup
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/radioGroup"
+      android:weightSum="2"
+		 android:padding="5dp"
+    >
+      
+	<RadioButton 
+		android:id="@+id/customPlayer1Service"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/player1Service"
+	    android:layout_weight="1"
+	    android:singleLine="true"
+	    android:checked="false"
+		android:padding="5dp"/>
+        
+	<RadioButton 
+	    android:id="@+id/customPlayer2Service"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/player2Service"
+	    android:layout_weight="1" 
+	    	    android:singleLine="true"
+		android:padding="5dp"
+	    
+	    />
+	</RadioGroup>
+    	
+</LinearLayout>

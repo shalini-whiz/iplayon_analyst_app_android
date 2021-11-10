@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+	android:id="@+id/customThirdBallInfoLayout"
+
+	>
+ 
+      <LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        
+           <TextView
+	        android:id="@+id/shotHand"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+	        android:textColor="@color/hightlightColor"
+	        android:padding="5dp"
+	        android:layout_weight="0.4"
+			android:layout_gravity="center_horizontal"  
+			android:gravity="center_horizontal"
+	    	android:duplicateParentState="true"
+	    	/>
+           
+	    <TextView
+	    	android:id="@+id/shotDestination"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+	        android:textColor="@color/hightlightColor"
+	        android:padding="5dp"
+	        android:layout_gravity="center_horizontal"  
+			android:gravity="center_horizontal"
+	        android:layout_weight="0.4"/>
+    
+	   
+	    
+	    <TextView
+	        android:id="@+id/totalPlayed"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+	        android:textColor="@color/hightlightColor"
+	        android:padding="5dp"
+	        android:layout_weight="0.2"
+			android:layout_gravity="center_horizontal"  
+			android:gravity="center_horizontal"
+	    	android:duplicateParentState="true"/>
+  
+	</LinearLayout>
+    <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:id="@+id/displayInfo"
+         android:visibility="gone"
+         >
+	   
+        
+	    <TextView
+	        android:id="@+id/shotHandInfoName"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+	        android:textColor="@color/hightlightColor"
+	        android:padding="5dp"
+	        android:layout_weight="0.4"
+			android:layout_gravity="center_horizontal"  
+			android:gravity="center_horizontal"
+	    	android:duplicateParentState="true"/>
+	    
+	     <TextView
+	        android:id="@+id/shotDestinationInfoName"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+	        android:textColor="@color/hightlightColor"
+	        android:padding="5dp"
+	        android:layout_gravity="center_horizontal"  
+			android:gravity="center_horizontal"
+	        android:layout_weight="0.4"/> 
+	    
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+	        android:textColor="@color/hightlightColor"
+	        android:padding="5dp"
+	        android:layout_weight="0.2"
+			android:layout_gravity="center_horizontal"  
+			android:gravity="center_horizontal"
+	    	android:duplicateParentState="true"/>
+	</LinearLayout>
+ 
+     
+    <TableLayout
+        android:id="@+id/strokeHeaderTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        >
+	    
+	    <TableRow
+	        >
+	        <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"	
+	        android:layout_weight="3"
+	        android:text="@string/recShot"
+	        android:textSize="12sp"
+	        android:textColor="@color/hightlightColor"
+	        android:gravity="center_horizontal"
+	        android:padding="5dp"
+	        android:background="@drawable/table_border"/>
+	        
+	        <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"	
+	        android:layout_weight="3"
+	        android:text="@string/recDest"
+	        android:textSize="12sp"	       
+	        android:textColor="@color/hightlightColor"
+	        android:gravity="center_horizontal"
+	        android:padding="5dp"
+	        android:background="@drawable/table_border"/>
+	        
+	        <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"	
+	        android:layout_weight="3"
+	        android:text="@string/thirdBall"
+	        android:textSize="12sp"	               
+	        android:textColor="@color/hightlightColor"
+	        android:gravity="center_horizontal"
+	        android:padding="5dp"
+	        android:background="@drawable/table_border"/>
+	        
+	        <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"	
+	        android:layout_weight="1"
+	        android:text="@string/played"
+	        android:textSize="12sp"	               
+	        android:textColor="@color/hightlightColor"
+	        android:gravity="center_horizontal"
+	        android:padding="5dp"
+	        android:background="@drawable/table_border"/>
+	        
+	    </TableRow>
+    </TableLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+     
+        <TableLayout
+                android:id="@+id/thirdBallDataTable"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+        </TableLayout>
+    </ScrollView> 
+    
+   </LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/lighter_background">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Spinner
+            android:id="@+id/chooseAnalyticsType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <ImageView
+            android:id="@+id/downloadAnalytics"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/download_30"
+            android:tint="@color/buttonColor"></ImageView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Spinner
+            android:id="@+id/player1AnalyzeFilter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:prompt="@string/choosePlayer1"
+            android:spinnerMode="dialog" />
+
+        <Spinner
+            android:id="@+id/player2AnalyzeFilter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:prompt="@string/choosePlayer2"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/toolBarSeparator" />
+
+
+    <include
+        android:id="@+id/serviceHeaderLayout"
+        layout="@layout/service_analysis_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"></include>
+
+    <include
+        android:id="@+id/receiveHeaderLayout"
+        layout="@layout/receive_analytics_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"></include>
+
+    <include
+        android:id="@+id/rallyHeaderLayout"
+        layout="@layout/rally_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"></include>
+
+    <include
+        android:id="@+id/strokeAnalysisHeaderLayout"
+        layout="@layout/stroke_analysis_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"></include>
+
+    <include
+        android:id="@+id/thirdBallAnalysisHeaderLayout"
+        layout="@layout/thirdball_analysis_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"></include>
+
+
+    <ImageView
+        android:id="@+id/analyticsdownarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@drawable/downarrow"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/playerAnalyticsListView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:transcriptMode="alwaysScroll"></ListView>
+
+    <include
+        android:id="@+id/fourthball_analysisLayout"
+        layout="@layout/fourthball_analysis"></include>
+
+    <ImageView
+        android:id="@+id/analyticsuparrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@drawable/uparrow"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/sortLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/sortBy"
+            android:textColor="@color/mainHeader" />
+
+        <Spinner
+            android:id="@+id/sortAnalyzeFilter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/chooseTime"
+            android:textColor="@color/mainHeader" />
+
+        <Spinner
+            android:id="@+id/analyzeTimeFilter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

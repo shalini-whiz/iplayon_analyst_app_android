@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu1" android:alphabeticShortcut="a"
+        android:title="Destination Format" android:orderInCategory="1"
+        >
+        <menu >
+            <group android:id="@+id/group1" android:checkableBehavior="single">
+                <item android:id="@+id/submenu1" android:title="6 Point" />
+                <item android:id="@+id/submenu2" android:title="8 Point" />
+                <item android:id="@+id/submenu3" android:title="9 Point" />
+                <item android:id="@+id/submenu4" android:title="14 Point" />
+                <item android:id="@+id/submenu5" android:title="Back to Menu" />
+
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:id="@+id/menu2" android:alphabeticShortcut="b"
+        android:title="Player Settings" android:orderInCategory="2" >
+        <menu >
+            <group android:id="@+id/group2" android:checkableBehavior="single" >
+                <item android:id="@+id/submenu6" android:title="" />
+                <item android:id="@+id/submenu7" android:title="" />
+                <item android:id="@+id/submenu8" android:title="Back to Menu" />
+
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/menu3" android:alphabeticShortcut="a"
+        android:title="Match Date" android:orderInCategory="3"
+        />
+
+</menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/lighter_background_theme"
+        />
+    <item>
+        <bitmap android:src="@drawable/backgroud_abstract"
+            android:scaleType="fitXY"
+            android:alpha="0.5"
+            android:color="@color/white"
+            />
+    </item>
+</layer-list>

@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="4"
+ >
+ 	<TextView
+ 	    android:id="@+id/recvShot"
+		android:layout_width="0dp"
+	    android:layout_height="wrap_content"	
+	    android:layout_weight="3"
+	    android:textSize="12sp"
+	    android:textColor="@color/mainHeader"
+	    android:gravity="center_horizontal"
+	    android:padding="5dp"
+	    android:background="@drawable/table_border"
+	    android:text=""/>
+	
+	 <TextView
+	    android:id="@+id/secondballCount"
+	 	android:layout_width="0dp"
+	    android:layout_height="wrap_content"	
+	    android:layout_weight="1"
+	    android:textSize="12sp"	               
+	    android:textColor="@color/mainHeader"
+	    android:gravity="center_horizontal"
+	    android:padding="5dp"
+	    android:background="@drawable/table_border"
+	    android:text=""/>
+</LinearLayout>

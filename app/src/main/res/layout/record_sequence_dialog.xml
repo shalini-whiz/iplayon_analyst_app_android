@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal|center_vertical"
+		android:layout_gravity="center_horizontal|center_vertical"
+		android:textSize="16sp"
+		android:padding="5dp"
+		android:background="@color/websiteHeader"
+		android:id="@+id/dialogTitle"
+		android:textColor="@color/textColor"
+		android:text="@string/saveSequence"
+
+		/>
+
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="#c0c0c0" />
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:padding="5dp"
+		android:id="@+id/seqWinLayout"
+		android:visibility="visible">
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0.3"
+			android:text="Winner:"
+			android:textColor="@color/mainHeader"
+			android:padding="5dp"
+			android:textSize="14sp"
+
+			/>
+
+		<TextView
+			android:id="@+id/winnerInfo"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0.7"
+			android:textSize="16sp"
+			android:gravity="center_horizontal"
+			android:textColor="@color/playerColor"
+			android:padding="5dp"
+			android:text=""/>
+
+	</LinearLayout>
+    
+
+
+        	 
+</LinearLayout>
